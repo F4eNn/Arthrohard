@@ -1,0 +1,14 @@
+{
+  "name": "arthrohard",
+  "version": "1.0.0",
+  "description": "Zadanie rekrutacyjna dla brands manago",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateusz Kołodziej",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
