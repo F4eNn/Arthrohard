@@ -8,8 +8,8 @@
 	</head>
 
 	<body class="futura-pt text-black">
-
-		<nav class="flex h-[85px] lg:h-[122px] bg-white shadow">
+		
+		<nav class="flex h-[85px] bg-white shadow lg:h-[122px]">
 			<ul class="wrapper flex items-center justify-between px-3 font-light uppercase">
 				<li>
 					<a href="/src/index.html"
@@ -17,7 +17,7 @@
 					/></a>
 				</li>
 				<ul class="hidden w-7/12 gap-[40px] md:flex">
-					<li class="nav-link">Co nas wyróżnia</li>
+					<li class="nav-link"><a href="#about-us">Co nas wyróżnia</a></li>
 					<li class="nav-link">skład</li>
 					<li class="nav-link font-bold">Produkty</li>
 				</ul>
@@ -28,15 +28,62 @@
 						<div class="burget-btn"></div>
 					</button>
 				</li>
-				<li class="fixed inset-0 bg-black/10 ">
+				<li class="fixed inset-0 hidden bg-black/10">
 					<ul class="bg-gray fixed inset-0 ml-auto w-3/4 pl-10 pt-36">
-						<li class="nav-link">Co nas wyróżnia</li>
+						<li class="nav-link" href="#about-us">Co nas wyróżnia</li>
 						<li class="nav-link">skład</li>
 						<li class="nav-link font-bold">Produkty</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+
+		<main class="mb-40 mt-1">
+
+			<section class="bg-darkWhite w-full pb-20 pt-8">
+				<div class="wrapper flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5">
+					<div class="relative shrink-0 xl:-ml-20">
+						<img
+							src="./assets/minify-images/hero.webp"
+							alt="preparat na wsparcie stawów dla psa"
+							class="relative z-20"
+						/>
+						<img
+							src="./assets/minify-images/hero-vector.webp"
+							alt=""
+							class="absolute bottom-20 left-4 hidden sm:inline"
+						/>
+						<img
+							src="./assets/minify-images/hero-vector.webp"
+							alt=""
+							class="absolute bottom-1/4 right-8 hidden rotate-12 sm:inline"
+						/>
+					</div>
+					<div class="text-center xl:text-left">
+						<h1 class="2xl:text-heading mb-8 text-5xl uppercase sm:text-7xl md:text-8xl">
+							Arthro<span class="text-red">hard</span>
+						</h1>
+
+						<div class="2xl:text-heading2 mb-5 text-xl sm:text-3xl md:text-4xl 2xl:leading-[60px]">
+							<h2 class="to-gray bg-gradient-to-r from-black bg-clip-text text-transparent">
+								Lab-V Arthrohard Preparat <br />
+								na wsparcie stawów dla psa i kota
+							</h2>
+						</div>
+						<p class="sm:text-normal">
+							Arthrohard to dobrze przyswajalny suplement diety w formie syropu, <br class="hidden sm:block" />
+							stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
+						</p>
+						<button
+							class="bg-green hover:bg-green/80 hover-colors-300 text-darkWhite text-normal mt-5 px-10 py-2 font-[500]"
+						>
+							Kup teraz
+						</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
 
 		<script src="/src/script.js"></script>
 	</body>
