@@ -23,4 +23,21 @@
 	.futura-pt {
 		font-family: 'Futura PT', sans-serif;
 	}
+	.wrapper {
+		@apply mx-auto w-full max-w-[1536px];
+	}
+	.hover-colors-300 {
+		@apply transition-colors duration-300;
+	}
+	.shadow {
+		box-shadow: 1px 1px 6px rgb(104, 104, 104);
+	}
+}
+@layer components {
+	.nav-link {
+		@apply hover-colors-300 hover:text-red cursor-pointer px-2 py-5;
+	}
+	.burget-btn {
+		@apply group-hover:bg-red hover-colors-300 h-[2px] w-[25px] bg-black;
+	}
 }
