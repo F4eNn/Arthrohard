@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: Futura PT;
+		src: url(/assets/fonts/FuturaPTMedium.otf) format('opentype');
+		font-weight: 400;
+	}
+	@font-face {
+		font-family: Futura PT;
+		src: url(/assets/fonts/FuturaPTHeavy.otf) format('opentype');
+		font-weight: 700;
+	}
+	@font-face {
+		font-family: Futura PT;
+		src: url(/assets/fonts/FuturaPTLight.otf) format('opentype');
+		font-weight: 300;
+	}
+}
+@layer utilities {
+	.futura-pt {
+		font-family: 'Futura PT', sans-serif;
+	}
+}
