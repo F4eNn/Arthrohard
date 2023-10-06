@@ -9,6 +9,7 @@ module.exports = {
 				green: '#30ab4c',
 				darkWhite: '#f6f6f6',
 				white: '#ffff',
+				smoke: '#d9d9d9'
 			},
 			fontSize: {
 				heading: '120px',

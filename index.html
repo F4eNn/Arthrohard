@@ -17,7 +17,7 @@
 				</li>
 				<ul class="hidden w-7/12 gap-[40px] md:flex">
 					<li class="nav-link"><a href="#about-us">Co nas wyróżnia</a></li>
-					<li class="nav-link">skład</li>
+					<li class="nav-link"><a href="#composition">skład</a></li>
 					<li class="nav-link font-bold">Produkty</li>
 				</ul>
 				<li class="relative z-20 md:hidden">
@@ -30,7 +30,7 @@
 				<li class="fixed inset-0 hidden bg-black/10">
 					<ul class="fixed inset-0 ml-auto w-3/4 bg-gray pl-10 pt-36">
 						<li class="nav-link" href="#about-us">Co nas wyróżnia</li>
-						<li class="nav-link">skład</li>
+						<li class="nav-link"><a href="#composition">skład</a></li>
 						<li class="nav-link font-bold">Produkty</li>
 					</ul>
 				</li>
@@ -50,7 +50,9 @@
 					class="absolute -bottom-[325px] right-0 hidden xl:inline"
 				/>
 				<img src="/assets/minify-images/global-top-vector.webp" alt="" class="absolute bottom-[100px] right-0" />
-				<div class="wrapper relative z-30 flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5">
+				<div
+					class="wrapper relative z-30 flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5"
+				>
 					<div class="relative shrink-0 xl:-ml-20">
 						<img
 							src="./assets/minify-images/hero.webp"
@@ -96,7 +98,7 @@
 			<section id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
 				<div class="wrapper relative z-30 px-3">
 					<div class="flex flex-col items-center">
-						<h2 class="mb-5 text-center text-2xl sm:text-3xl md:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
+						<h2 class="mb-5 text-center text-3xl sm:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
 							<span class="gradient bg-clip-text text-transparent">Co wyróżnia nasz preparat</span>
 						</h2>
 						<svg xmlns="http://www.w3.org/2000/svg" width="127" height="2" viewBox="0 0 127 2" fill="none">
@@ -245,8 +247,110 @@
 					</div>
 				</div>
 			</section>
-		</main>
 
+			<section id="composition" class="mx-3 overflow-hidden">
+				<div class="wrapper">
+					<h2 class="mt-12 text-center text-3xl sm:text-4xl 2xl:text-heading2">
+						<span class="gradient">Skład w 5ml</span>
+					</h2>
+					<h3 class="sm:mt-[120px] mt-[90px] text-center text-xl sm:text-heading3">Co dają poszczególne składniki:</h3>
+					<div class="sm:mt-[121px] mt-[90px] flex flex-col items-center justify-between 2xl:flex-row">
+						<div class="flex flex-wrap justify-around gap-14 2xl:flex-col 2xl:gap-4">
+							<div class="flex max-w-[417px] flex-col items-center gap-5  vsm:text-normal">
+								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
+									Siarczan glukozaminy
+									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">650 mg</span>
+								</h3>
+								<p class="text-center font-light">
+									Glukozamina jest naturalnym składnikiem chrząstki. Dodatek glukozaminy przyczynia się do zwiększenia
+									produkcji glikozaminoglikanów (m.in. siarczanu keratanu, heparanu, kwasu hialuronowego), które
+									pomagają w odbudowie chrząstki, co jest szczególnie korzystne dla zwierząt ze zmianami
+									zwyrodnieniowymi stawów.
+								</p>
+							</div>
+							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal">
+								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
+									Siarczan chondroityny
+									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">300 mg</span>
+								</h3>
+								<p class="text-center font-light">
+									Chondroityna, podobnie jak glukozamina, jest składnikiem chrząstki. Chondroityna pomaga zwalczać
+									enzymy, które niszczą chrząstkę, a także pomaga chrząstce zatrzymać wodę, co jest ważne dla jej
+									sprężystości i absorpcji wstrząsów.
+								</p>
+							</div>
+							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal 2xl:mt-[86px] 2xl:gap-0">
+								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl sm:text-heading3">
+									Kwas hialuronowy
+									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">50 mg</span>
+								</h3>
+								<p class="text-center font-light">
+									Kwas hialuronowy jest kluczowym składnikiem płynu stawowego, który działa jak smar i amortyzator dla
+									stawów. Suplementacja kwasem hialuronowym może pomóc w utrzymaniu prawidłowej objętości i konsystencji
+									płynu stawowego.
+								</p>
+							</div>
+						</div>
+						<div class="relative max-h-[1238px] shrink-0">
+							<div>
+								<img src="./assets/minify-images/medicine.webp" alt="lek Arthrohard" class="relative z-20" />
+								<img src="./assets/minify-images/medicine-right-vector.webp" alt="" class="absolute left-0 top-[38%]" />
+								<img
+									src="./assets/minify-images/medicine-left-vector.webp"
+									alt=""
+									class="absolute -right-10 top-[27%]"
+								/>
+							</div>
+							<button
+								class="hover-colors-300 absolute bottom-[5%] right-1/2 z-50 mt-5 w-max translate-x-1/2 bg-red px-10 py-2 text-normal font-[500] text-darkWhite hover:bg-red/80 sm:bottom-20 sm:left-[200px] sm:translate-x-0"
+							>
+								Kup teraz
+							</button>
+						</div>
+						<div class="flex flex-wrap justify-around gap-14 2xl:flex-col 2xl:gap-4">
+							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal">
+								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
+									Czarci pazur
+									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">250 mg</span>
+								</h3>
+								<p class="text-center font-light">
+									Czarci pazur jest rośliną, która ma właściwości przeciwzapalne i przeciwbólowe. Może to pomóc
+									zwierzętom, które doświadczają bólu i stanu zapalnego związanego z problemami ze stawami.
+								</p>
+							</div>
+							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal 2xl:mt-[112px] 2xl:gap-0">
+								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
+									Witamina C
+									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">50 mg</span>
+								</h3>
+								<p class="text-center font-light">
+									Witamina C jest potężnym przeciwutleniaczem, który może pomóc w ochronie stawów poprzez neutralizację
+									wolnych rodników, które mogą uszkadzać chrząstkę. Ponadto, witamina C odgrywa ważną rolę w produkcji
+									kolagenu, kluczowego składnika chrząstki.
+								</p>
+							</div>
+							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal 2xl:mt-[60px] 2xl:gap-0">
+								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
+									MSM
+									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">250 mg</span>
+								</h3>
+								<p class="text-center font-light">
+									Metylosulfonylometan, czyli MSM, to naturalny związek siarki, który pomaga w utrzymaniu zdrowych
+									stawów poprzez zmniejszenie stanu zapalnego i bólu. MSM może również pomagać w produkcji kolagenu, co
+									przyczynia się do zdrowia chrząstki stawowej.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<script src="/src/script.js"></script>
 	</body>
 </html>

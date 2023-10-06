@@ -29,6 +29,9 @@
 	.hover-colors-300 {
 		@apply transition-colors duration-300;
 	}
+	.medicine-underline {
+		@apply after:absolute after:bottom-12 after:left-0 after:h-[1px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition-all after:duration-300 after:content-[''] after:hover:scale-x-100;
+	}
 	.shadow {
 		box-shadow: 1px 1px 6px rgb(104, 104, 104);
 	}
