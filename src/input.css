@@ -59,7 +59,7 @@
 	.custom-underline-hover::after {
 		transform: scaleX(1);
 	}
-}
+	}
 @layer components {
 	.nav-link {
 		@apply hover-colors-300 cursor-pointer px-2 py-5 hover:text-red;

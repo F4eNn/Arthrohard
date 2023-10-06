@@ -9,7 +9,8 @@ module.exports = {
 				green: '#30ab4c',
 				darkWhite: '#f6f6f6',
 				white: '#ffff',
-				smoke: '#d9d9d9'
+				smoke: '#d9d9d9',
+				brown: '#bebebe'
 			},
 			fontSize: {
 				heading: '120px',
@@ -21,10 +22,14 @@ module.exports = {
 				vsm: '425px',
 			},
 			backgroundImage: {
-				parallax: "url('/assets/minify-images/section-dog.webp')"
-			}
+				parallax: "url('/assets/minify-images/section-dog.webp')",
+			},
 		},
 	},
 
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/forms')({
+			strategy: 'class',
+		}),
+	],
 }

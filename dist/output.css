@@ -775,6 +775,14 @@ video {
   margin-top: 90px;
 }
 
+.mt-\[130px\] {
+  margin-top: 130px;
+}
+
+.mt-\[120px\] {
+  margin-top: 120px;
+}
+
 .flex {
   display: flex;
 }
@@ -783,8 +791,8 @@ video {
   display: none;
 }
 
-.h-\[1000px\] {
-  height: 1000px;
+.h-\[350px\] {
+  height: 350px;
 }
 
 .h-\[46px\] {
@@ -823,6 +831,10 @@ video {
   width: 180px;
 }
 
+.w-\[375px\] {
+  width: 375px;
+}
+
 .w-\[400px\] {
   width: 400px;
 }
@@ -848,12 +860,24 @@ video {
   width: max-content;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .max-w-\[417\] {
   max-width: 417;
 }
 
 .max-w-\[417px\] {
   max-width: 417px;
+}
+
+.max-w-\[1600px\] {
+  max-width: 1600px;
+}
+
+.max-w-\[1650px\] {
+  max-width: 1650px;
 }
 
 .shrink-0 {
@@ -893,6 +917,10 @@ video {
 .rotate-\[5deg\] {
   --tw-rotate: 5deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -939,6 +967,10 @@ video {
   gap: 40px;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -950,6 +982,24 @@ video {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-9 {
+  row-gap: 2.25rem;
 }
 
 .space-y-7 > :not([hidden]) ~ :not([hidden]) {
@@ -978,6 +1028,19 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
+}
+
+.border-none {
+  border-style: none;
+}
+
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(171 48 60 / var(--tw-border-opacity));
 }
 
 .bg-black\/10 {
@@ -1011,6 +1074,11 @@ video {
 
 .bg-white {
   background-color: #ffff;
+}
+
+.bg-brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 190 190 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/assets\/minify-images\/dog-right-vector\.webp\'\)\] {
@@ -1071,6 +1139,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1105,6 +1178,10 @@ video {
   padding-top: 70px;
 }
 
+.pt-\[130px\] {
+  padding-top: 130px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1131,6 +1208,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-heading3 {
+  font-size: 31px;
 }
 
 .font-\[500\] {
@@ -1174,6 +1255,10 @@ video {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-white {
+  color: #ffff;
 }
 
 .shadow {
