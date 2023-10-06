@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="/dist/output.css" />
 	</head>
 
-	<body class="futura-pt text-black ">
+	<body class="futura-pt text-black">
 		<nav class="flex h-[85px] bg-white shadow lg:h-[122px]">
 			<ul class="wrapper flex items-center justify-between px-3 font-light uppercase">
 				<li>
@@ -38,8 +38,19 @@
 		</nav>
 
 		<main class="mb-40 mt-1">
-			<section class="w-full bg-darkWhite pb-20 pt-8">
-				<div class="wrapper flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5">
+			<section class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
+				<img
+					src="/assets/minify-images/global-vector.webp"
+					alt=""
+					class="absolute -bottom-[275px] -left-[130px] z-0 rotate-[130deg]"
+				/>
+				<img
+					src="/assets/minify-images/global-vector.webp"
+					alt=""
+					class="absolute -bottom-[325px] right-0 hidden xl:inline"
+				/>
+				<img src="/assets/minify-images/global-top-vector.webp" alt="" class="absolute bottom-[100px] right-0" />
+				<div class="wrapper relative z-30 flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5">
 					<div class="relative shrink-0 xl:-ml-20">
 						<img
 							src="./assets/minify-images/hero.webp"
@@ -82,8 +93,8 @@
 				</div>
 			</section>
 
-			<section id="about-us" class="overflow-hidden  bg-darkWhite pt-[70px] pb-[100px]">
-				<div class="wrapper px-3">
+			<section id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
+				<div class="wrapper relative z-30 px-3">
 					<div class="flex flex-col items-center">
 						<h2 class="mb-5 text-center text-2xl sm:text-3xl md:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
 							<span class="gradient bg-clip-text text-transparent">Co wyróżnia nasz preparat</span>
@@ -93,7 +104,7 @@
 						</svg>
 					</div>
 
-					<div class="mt-[90px] xl:mt-[135px] flex flex-wrap justify-around gap-x-10 gap-y-28 2xl:justify-between">
+					<div class="mt-[90px] flex flex-wrap justify-around gap-x-10 gap-y-28 xl:mt-[135px] 2xl:justify-between">
 						<div class="flex w-[400px] flex-col items-center justify-between text-center">
 							<div class="flex flex-col gap-7">
 								<div class="flex flex-col items-center">
@@ -165,7 +176,7 @@
 							</div>
 
 							<div class="relative mt-12">
-								<div class="vsm:flex-row group relative flex flex-col gap-y-5 items-center justify-center">
+								<div class="vsm:flex-row group relative flex flex-col items-center justify-center gap-y-5">
 									<img
 										src="./assets/minify-images/product-dog1.webp"
 										alt="pies leży na kolanach"
