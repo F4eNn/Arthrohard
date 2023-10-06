@@ -16,6 +16,9 @@ module.exports = {
 				heading3: '31px',
 				normal: '20px',
 			},
+			screens: {
+				vsm: '425px',
+			},
 		},
 	},
 

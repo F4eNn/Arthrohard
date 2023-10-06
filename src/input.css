@@ -32,12 +32,36 @@
 	.shadow {
 		box-shadow: 1px 1px 6px rgb(104, 104, 104);
 	}
+	.product-shadow {
+		box-shadow: 1px 1px 10px rgb(173, 173, 173);
+	}
+	.gradient {
+		background: linear-gradient(90deg, #111 -8.85%, #b1b1b1 58.84%, #696969 91.39%, #b1b1b1 116.12%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.custom-underline::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -24px;
+		width: 100%;
+		height: 1px;
+		background-color: #1d1d1d;
+		transition: all 0.3s;
+		transform: scaleX(0);
+		transform-origin: center;
+	}
+	.custom-underline-hover::after {
+		transform: scaleX(1);
+	}
 }
 @layer components {
 	.nav-link {
-		@apply hover-colors-300 hover:text-red cursor-pointer px-2 py-5;
+		@apply hover-colors-300 cursor-pointer px-2 py-5 hover:text-red;
 	}
 	.burget-btn {
-		@apply group-hover:bg-red hover-colors-300 h-[2px] w-[25px] bg-black;
+		@apply hover-colors-300 h-[2px] w-[25px] bg-black group-hover:bg-red;
 	}
 }
