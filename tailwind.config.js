@@ -20,6 +20,9 @@ module.exports = {
 			screens: {
 				vsm: '425px',
 			},
+			backgroundImage: {
+				parallax: "url('/assets/minify-images/section-dog.webp')"
+			}
 		},
 	},
 

@@ -178,7 +178,7 @@
 							</div>
 
 							<div class="relative mt-12">
-								<div class="vsm:flex-row group relative flex flex-col items-center justify-center gap-y-5">
+								<div class="group relative flex flex-col items-center justify-center gap-y-5 vsm:flex-row">
 									<img
 										src="./assets/minify-images/product-dog1.webp"
 										alt="pies leży na kolanach"
@@ -188,7 +188,7 @@
 									<img
 										src="./assets/minify-images/product-dog2.webp"
 										alt="pies jedzący karme z miski"
-										class="vsm:ml-5 relative z-20"
+										class="relative z-20 vsm:ml-5"
 									/>
 									<div class="custom-underline group-hover:custom-underline-hover"></div>
 								</div>
@@ -249,15 +249,15 @@
 			</section>
 
 			<section id="composition" class="mx-3 overflow-hidden">
-				<div class="wrapper">
+				<div class="wrapper mb-[108px]">
 					<h2 class="mt-12 text-center text-3xl sm:text-4xl 2xl:text-heading2">
 						<span class="gradient">Skład w 5ml</span>
 					</h2>
-					<h3 class="sm:mt-[120px] mt-[90px] text-center text-xl sm:text-heading3">Co dają poszczególne składniki:</h3>
-					<div class="sm:mt-[121px] mt-[90px] flex flex-col items-center justify-between 2xl:flex-row">
+					<h3 class="mt-[90px] text-center text-xl sm:mt-[120px] sm:text-heading3">Co dają poszczególne składniki:</h3>
+					<div class="mt-[90px] flex flex-col items-center justify-between sm:mt-[121px] 2xl:flex-row">
 						<div class="flex flex-wrap justify-around gap-14 2xl:flex-col 2xl:gap-4">
-							<div class="flex max-w-[417px] flex-col items-center gap-5  vsm:text-normal">
-								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal">
+								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
 									Siarczan glukozaminy
 									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">650 mg</span>
@@ -270,7 +270,7 @@
 								</p>
 							</div>
 							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal">
-								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
 									Siarczan chondroityny
 									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">300 mg</span>
@@ -282,7 +282,7 @@
 								</p>
 							</div>
 							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal 2xl:mt-[86px] 2xl:gap-0">
-								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl sm:text-heading3">
 									Kwas hialuronowy
 									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">50 mg</span>
@@ -312,7 +312,7 @@
 						</div>
 						<div class="flex flex-wrap justify-around gap-14 2xl:flex-col 2xl:gap-4">
 							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal">
-								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
 									Czarci pazur
 									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">250 mg</span>
@@ -323,7 +323,7 @@
 								</p>
 							</div>
 							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal 2xl:mt-[112px] 2xl:gap-0">
-								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
 									Witamina C
 									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">50 mg</span>
@@ -335,7 +335,7 @@
 								</p>
 							</div>
 							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal 2xl:mt-[60px] 2xl:gap-0">
-								<div class="bg-smoke h-[70px] w-[70px] rounded-full"></div>
+								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
 									MSM
 									<span class="text-normal font-light transition-all duration-300 group-hover:mt-5">250 mg</span>
@@ -350,6 +350,21 @@
 					</div>
 				</div>
 			</section>
+
+			<section>
+				<div class="bg-parallax relative mx-auto min-h-[500px] w-[945px] bg-fixed bg-center bg-no-repeat">
+					<div
+						style="background-position: 35% 75%"
+						class="absolute -z-10 h-[500px] w-full bg-[url('/assets/images/dog-vector.png')] bg-fixed bg-center bg-no-repeat"
+					></div>
+					<div
+						style="background-position: 70% 60%"
+						class="absolute -z-10 h-[500px] w-full bg-[url('/assets/images/dog-right-vector.png')] bg-fixed bg-center bg-no-repeat"
+					></div>
+				</div>
+			</section>
+			
+			<section class="h-[1000px] w-full bg-darkWhite"></section>
 		</main>
 		<script src="/src/script.js"></script>
 	</body>
