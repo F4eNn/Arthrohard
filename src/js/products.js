@@ -6,6 +6,7 @@ let currentPage = 1
 let fetchedItems = []
 let itemsPerPage = 20
 let isFetching = false
+export let allAvailableProducts = []
 
 const fetchData = async () => {
 	const URL = `https://brandstestowy.smallhost.pl/api/random?pageNumber=${currentPage}&pageSize=${itemsPerPage}`
@@ -16,7 +17,8 @@ const fetchData = async () => {
 			throw new Error('Fetch failed')
 		}
 		const resData = await res.json()
-
+		const newProduct = [...allAvailableProducts, resData]
+		allAvailableProducts = newProduct
 		fetchedItems = [resData]
 		createProducts()
 		currentPage++

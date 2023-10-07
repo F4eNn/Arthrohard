@@ -68,6 +68,9 @@
 		height: 1px;
 		background-color: #111111;
 	}
+	.hide {
+		display: none;
+	}
 }
 @layer components {
 	.nav-link {

@@ -382,31 +382,34 @@
 					</div>
 					<div data-boxProducts="box" class="mt-[120px] flex flex-wrap justify-center gap-x-12 gap-y-9">
 						<template data-productsTemplate="products">
-							<div
+							<a
+								href="#"
 								data-product="product"
 								class="flex h-[350px] w-[375px] items-center justify-center bg-brown text-heading3"
-							></div>
+							></a>
 						</template>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<dialog class="relative h-[235px] w-full max-w-[843px] rounded-md p-2 text-heading3 backdrop:bg-black/50">
-			<button autofocus class="absolute right-0 top-0 block p-5">
-				<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M0.496547 14L6.26255 6.932L1.61255 0.948999H5.20855L8.09155 4.762L11.0055 0.948999H14.7255L9.92055 6.932L15.5005 14H11.8425L8.09155 9.133L4.21655 14H0.496547Z"
-						fill="black"
-					/>
-				</svg>
-			</button>
-			<div class="flex h-full flex-col justify-between">
-				<span>ID 12</span>
-				<span>Nazwa: Timeline</span>
-				<span>value: 5632</span>
+		<div data-overlay class="hide fixed inset-0 z-[999] flex items-center justify-center bg-black/50 p-2 text-heading3">
+			<div class="relative h-[285px] w-full max-w-[843px] rounded-md bg-white p-3">
+				<button id="closeBtn" autofocus class="absolute right-0 top-0 block p-5">
+					<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M0.496547 14L6.26255 6.932L1.61255 0.948999H5.20855L8.09155 4.762L11.0055 0.948999H14.7255L9.92055 6.932L15.5005 14H11.8425L8.09155 9.133L4.21655 14H0.496547Z"
+							fill="black"
+						/>
+					</svg>
+				</button>
+				<div class="flex h-full flex-col justify-between">
+					<span>ID <span data-content="popup"></span></span>
+					<span>Nazwa: <span data-content="popup"></span></span>
+					<span>Wartość: <span data-content="popup"></span></span>
+				</div>
 			</div>
-		</dialog>
+		</div>
 		<script type="module" src="/src/script.js"></script>
 	</body>
 </html>
