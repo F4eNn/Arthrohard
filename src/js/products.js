@@ -6,6 +6,7 @@ let currentPage = 1
 let fetchedItems = []
 let itemsPerPage = 20
 let isFetching = false
+
 export let allAvailableProducts = []
 
 const fetchData = async () => {

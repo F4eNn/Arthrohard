@@ -1,5 +1,5 @@
 module.exports = {
-	content: ['./*{html,js}'],
+	content: ['./**/*.{html,js}'],
 	theme: {
 		extend: {
 			colors: {
@@ -10,7 +10,7 @@ module.exports = {
 				darkWhite: '#f6f6f6',
 				white: '#ffff',
 				smoke: '#d9d9d9',
-				brown: '#bebebe'
+				brown: '#bebebe',
 			},
 			fontSize: {
 				heading: '120px',
