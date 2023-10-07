@@ -771,16 +771,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[90px\] {
-  margin-top: 90px;
-}
-
-.mt-\[130px\] {
-  margin-top: 130px;
-}
-
 .mt-\[120px\] {
   margin-top: 120px;
+}
+
+.mt-\[90px\] {
+  margin-top: 90px;
 }
 
 .flex {
@@ -860,8 +856,8 @@ video {
   width: max-content;
 }
 
-.w-\[350px\] {
-  width: 350px;
+.max-w-\[1650px\] {
+  max-width: 1650px;
 }
 
 .max-w-\[417\] {
@@ -870,14 +866,6 @@ video {
 
 .max-w-\[417px\] {
   max-width: 417px;
-}
-
-.max-w-\[1600px\] {
-  max-width: 1600px;
-}
-
-.max-w-\[1650px\] {
-  max-width: 1650px;
 }
 
 .shrink-0 {
@@ -967,13 +955,14 @@ video {
   gap: 40px;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+}
+
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .gap-y-28 {
@@ -982,20 +971,6 @@ video {
 
 .gap-y-5 {
   row-gap: 1.25rem;
-}
-
-.gap-x-3 {
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
-}
-
-.gap-x-12 {
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
 }
 
 .gap-y-9 {
@@ -1047,6 +1022,11 @@ video {
   background-color: rgb(29 29 29 / 0.1);
 }
 
+.bg-brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 190 190 / var(--tw-bg-opacity));
+}
+
 .bg-darkWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
@@ -1074,11 +1054,6 @@ video {
 
 .bg-white {
   background-color: #ffff;
-}
-
-.bg-brown {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 190 190 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/assets\/minify-images\/dog-right-vector\.webp\'\)\] {
@@ -1174,12 +1149,12 @@ video {
   padding-top: 2rem;
 }
 
-.pt-\[70px\] {
-  padding-top: 70px;
-}
-
 .pt-\[130px\] {
   padding-top: 130px;
+}
+
+.pt-\[70px\] {
+  padding-top: 70px;
 }
 
 .text-center {
@@ -1201,6 +1176,10 @@ video {
   line-height: 1;
 }
 
+.text-heading3 {
+  font-size: 31px;
+}
+
 .text-normal {
   font-size: 20px;
 }
@@ -1208,10 +1187,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-heading3 {
-  font-size: 31px;
 }
 
 .font-\[500\] {

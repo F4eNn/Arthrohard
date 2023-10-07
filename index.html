@@ -37,7 +37,7 @@
 			</ul>
 		</nav>
 
-		<main class="mb-40 mt-1">
+		<main class="mt-1">
 			<section class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
 				<img
 					src="/assets/minify-images/global-vector.webp"
@@ -364,33 +364,33 @@
 				</div>
 			</section>
 
-			<section class="w-full bg-darkWhite px-3">
-				<div class="max-w-[1650px] mx-auto  w-full pt-[130px]">
+			<section data-products="products" class="w-full bg-darkWhite px-3">
+				<div class="mx-auto w-full max-w-[1650px] pt-[130px]">
 					<div class="flex justify-center">
-						<label for="selectPerSize" class="border-[1px] bg-white border-red px-3 py-2">Liczba produktów na stronie</label>
-								<select
-								id="selectPerSize"
-								class="relative flex cursor-pointer justify-center border-none bg-red px-7 text-white"
-							>
-								<option value="10">10</option>
-								<option selected value="20">20</option>
-								<option value="30">30</option>
-								<option value="50">50</option>
-							</select>
-				</div>
-				<div class="flex gap-x-12 gap-y-9 justify-center flex-wrap mt-[120px]">
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					<div class="w-[375px] h-[350px] bg-brown text-heading3 justify-center flex items-center">ID: 1</div>
-					
+						<label for="selectPerSize" class="border-[1px] border-red bg-white px-3 py-2"
+							>Liczba produktów na stronie</label
+						>
+						<select
+							id="selectPerSize"
+							class="relative flex cursor-pointer justify-center border-none bg-red px-7 text-white"
+						>
+							<option value="10">10</option>
+							<option selected value="20">20</option>
+							<option value="30">30</option>
+							<option value="50">50</option>
+						</select>
+					</div>
+					<div data-boxProducts="box" class="mt-[120px] flex flex-wrap justify-center gap-x-12 gap-y-9">
+						<template data-productsTemplate="products">
+							<div
+								data-product="product"
+								class="bg-brown flex h-[350px] w-[375px] items-center justify-center text-heading3"
+							></div>
+						</template>
+					</div>
 				</div>
 			</section>
 		</main>
-		<script src="/src/script.js"></script>
+		<script type="module" src="/src/script.js"></script>
 	</body>
 </html>
