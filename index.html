@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="PL-pl" class="scroll-smooth">
+<html lang="PL-pl" class="scroll-pt-[120px] scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +8,17 @@
 	</head>
 
 	<body class="futura-pt text-black">
-		<nav class="flex h-[85px] bg-white shadow lg:h-[122px]">
+		<nav class="fixed inset-0 z-50 flex h-[85px] bg-white shadow lg:h-[122px]">
 			<ul class="wrapper flex items-center justify-between px-3 font-light uppercase">
 				<li>
-					<a href="/src/index.html"
+					<a href="#"
 						><img src="/assets/minify-images/logo.webp" alt="logo Arthrohard" class="w-[180px] shrink-0 md:w-[240px]"
 					/></a>
 				</li>
 				<ul class="hidden w-7/12 gap-[40px] md:flex">
 					<li class="nav-link"><a href="#about-us">Co nas wyróżnia</a></li>
 					<li class="nav-link"><a href="#composition">skład</a></li>
-					<li class="nav-link font-bold">Produkty</li>
+					<li class="nav-link font-bold"><a href="#products">Produkty</a></li>
 				</ul>
 				<li class="relative z-20 md:hidden">
 					<button class="group space-y-[5px] py-3">
@@ -29,16 +29,16 @@
 				</li>
 				<li class="fixed inset-0 hidden bg-black/10">
 					<ul class="fixed inset-0 ml-auto w-3/4 bg-gray pl-10 pt-36">
-						<li class="nav-link" href="#about-us">Co nas wyróżnia</li>
+						<li class="nav-link"><a href="#about-us">Co nas wyróżnia</a></li>
 						<li class="nav-link"><a href="#composition">skład</a></li>
-						<li class="nav-link font-bold">Produkty</li>
+						<li class="nav-link font-bold"><a href="#products">Produkty</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
 
-		<main class="mt-1">
-			<section class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
+		<main class="mt-[122px]">
+			<section data-nav class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
 				<img
 					src="/assets/minify-images/global-vector.webp"
 					alt=""
@@ -95,7 +95,7 @@
 				</div>
 			</section>
 
-			<section id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
+			<section data-nav id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
 				<div class="wrapper relative z-30 px-3">
 					<div class="flex flex-col items-center">
 						<h2 class="mb-5 text-center text-3xl sm:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
@@ -248,7 +248,7 @@
 				</div>
 			</section>
 
-			<section id="composition" class="mx-3 overflow-hidden">
+			<section data-nav id="composition" class="mx-3 overflow-hidden">
 				<div class="wrapper mb-[108px]">
 					<h2 class="mt-12 text-center text-3xl sm:text-4xl 2xl:text-heading2">
 						<span class="gradient">Skład w 5ml</span>
@@ -352,7 +352,7 @@
 			</section>
 
 			<section>
-				<div class="bg-parallax relative mx-auto min-h-[500px] w-[945px] bg-fixed bg-center bg-no-repeat">
+				<div class="relative mx-auto min-h-[500px] w-[945px] bg-parallax bg-fixed bg-center bg-no-repeat">
 					<div
 						style="background-position: 35% 75%"
 						class="absolute -z-10 h-[500px] w-full bg-[url('/assets/minify-images/dog-vector.webp')] bg-fixed bg-center bg-no-repeat"
@@ -364,7 +364,7 @@
 				</div>
 			</section>
 
-			<section data-products="products" class="w-full bg-darkWhite px-3">
+			<section data-nav id="products" data-products="products" class="w-full bg-darkWhite px-3">
 				<div class="mx-auto w-full max-w-[1650px] pt-[130px]">
 					<div class="flex justify-center">
 						<label for="selectPerSize" class="border-[1px] border-red bg-white px-3 py-2"
@@ -384,7 +384,7 @@
 						<template data-productsTemplate="products">
 							<div
 								data-product="product"
-								class="bg-brown flex h-[350px] w-[375px] items-center justify-center text-heading3"
+								class="flex h-[350px] w-[375px] items-center justify-center bg-brown text-heading3"
 							></div>
 						</template>
 					</div>
