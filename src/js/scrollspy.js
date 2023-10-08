@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('[data-nav]')
+const sections = document.querySelectorAll('[data-nav*="scroll-spy"]')
 const menuLinks = document.querySelectorAll('a')
 
 const handleScrollSpy = () => {

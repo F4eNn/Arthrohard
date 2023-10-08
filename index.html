@@ -28,7 +28,7 @@
 					</button>
 				</li>
 				<li data-nav="mobile" class="fixed inset-0 left-full bg-black/10">
-					<ul class="ml-auto h-screen space-y-8 w-3/4 bg-gray pl-10 pt-36">
+					<ul class="ml-auto h-screen w-3/4 space-y-8 bg-gray pl-10 pt-36">
 						<li class="nav-link"><a href="#about-us" class="nav-item">Co nas wyróżnia</a></li>
 						<li class="nav-link"><a href="#composition" class="nav-item">skład</a></li>
 						<li class="nav-link font-bold"><a href="#products" class="nav-item">Produkty</a></li>
@@ -38,65 +38,67 @@
 		</nav>
 
 		<main class="mt-[85px] xl:mt-[122px]">
-			<section data-nav class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
-				<img
-					src="/assets/minify-images/global-vector.webp"
-					alt=""
-					class="absolute -bottom-[275px] -left-[130px] z-0 rotate-[130deg]"
-				/>
-				<img
-					src="/assets/minify-images/global-vector.webp"
-					alt=""
-					class="absolute -bottom-[325px] right-0 hidden xl:inline"
-				/>
-				<img src="/assets/minify-images/global-top-vector.webp" alt="" class="absolute bottom-[100px] right-0" />
-				<div
-					class="wrapper relative z-30 flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5"
-				>
-					<div class="relative shrink-0 xl:-ml-20">
-						<img
-							src="./assets/minify-images/hero.webp"
-							alt="preparat na wsparcie stawów dla psa"
-							class="relative z-20"
-						/>
-						<img
-							src="./assets/minify-images/hero-vector.webp"
-							alt=""
-							class="absolute bottom-20 left-4 hidden sm:inline"
-						/>
-						<img
-							src="./assets/minify-images/hero-vector.webp"
-							alt=""
-							class="absolute bottom-1/4 right-8 hidden rotate-12 sm:inline"
-						/>
-					</div>
-					<div class="text-center xl:text-left">
-						<h1 class="mb-8 text-5xl uppercase sm:text-7xl md:text-8xl 2xl:text-heading">
-							Arthro<span class="text-red">hard</span>
-						</h1>
-
-						<div class="mb-5 text-xl sm:text-3xl md:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
-							<h2 class="bg-gradient-to-r from-black to-gray bg-clip-text text-transparent">
-								Lab-V Arthrohard Preparat <br />
-								na wsparcie stawów dla psa i kota
-							</h2>
+			<section data-nav="scroll-spy" class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
+				<div data-animation>
+					<img
+						src="/assets/minify-images/global-vector.webp"
+						alt=""
+						class="absolute -bottom-[275px] -left-[130px] z-0 rotate-[130deg]"
+					/>
+					<img
+						src="/assets/minify-images/global-vector.webp"
+						alt=""
+						class="absolute -bottom-[325px] right-0 hidden xl:inline"
+					/>
+					<img src="/assets/minify-images/global-top-vector.webp" alt="" class="absolute bottom-[100px] right-0" />
+					<div
+						class="wrapper relative z-30 flex flex-col items-center justify-between gap-10 px-4 xl:flex-row xl:pl-10 xl:pr-5"
+					>
+						<div class="relative shrink-0 xl:-ml-20">
+							<img
+								src="./assets/minify-images/hero.webp"
+								alt="preparat na wsparcie stawów dla psa"
+								class="relative z-20"
+							/>
+							<img
+								src="./assets/minify-images/hero-vector.webp"
+								alt=""
+								class="absolute bottom-20 left-4 hidden sm:inline"
+							/>
+							<img
+								src="./assets/minify-images/hero-vector.webp"
+								alt=""
+								class="absolute bottom-1/4 right-8 hidden rotate-12 sm:inline"
+							/>
 						</div>
+						<div class="text-center xl:text-left">
+							<h1 class="mb-8 text-5xl uppercase sm:text-7xl md:text-8xl 2xl:text-heading">
+								Arthro<span class="text-red">hard</span>
+							</h1>
 
-						<p class="font-light sm:text-normal">
-							Arthrohard to dobrze przyswajalny suplement diety w formie syropu, <br class="hidden sm:block" />
-							stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
-						</p>
-						<button
-							class="hover-colors-300 mt-5 bg-green px-10 py-2 text-normal font-[500] text-darkWhite hover:bg-green/80"
-						>
-							Kup teraz
-						</button>
+							<div class="mb-5 text-xl sm:text-3xl md:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
+								<h2 class="bg-gradient-to-r from-black to-gray bg-clip-text text-transparent">
+									Lab-V Arthrohard Preparat <br />
+									na wsparcie stawów dla psa i kota
+								</h2>
+							</div>
+
+							<p class="font-light sm:text-normal">
+								Arthrohard to dobrze przyswajalny suplement diety w formie syropu, <br class="hidden sm:block" />
+								stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
+							</p>
+							<button
+								class="hover-colors-300 mt-5 bg-green px-10 py-2 text-normal font-[500] text-darkWhite hover:bg-green/80"
+							>
+								Kup teraz
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section data-nav id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
-				<div class="wrapper relative z-30 px-3">
+			<section data-nav="scroll-spy" id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
+				<div data-animation class="wrapper relative z-30 px-3">
 					<div class="flex flex-col items-center">
 						<h2 class="mb-5 text-center text-3xl sm:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
 							<span class="gradient bg-clip-text text-transparent">Co wyróżnia nasz preparat</span>
@@ -248,8 +250,8 @@
 				</div>
 			</section>
 
-			<section data-nav id="composition" class="mx-3 overflow-hidden">
-				<div class="wrapper mb-[108px]">
+			<section data-nav="scroll-spy" id="composition" class="mx-3 overflow-hidden">
+				<div data-animation class="wrapper mb-[108px]">
 					<h2 class="mt-12 text-center text-3xl sm:text-4xl 2xl:text-heading2">
 						<span class="gradient">Skład w 5ml</span>
 					</h2>
@@ -355,8 +357,8 @@
 				<div class="parallax h-[500px] w-full"></div>
 			</section>
 
-			<section data-nav id="products" data-products="products" class="w-full bg-darkWhite px-3">
-				<div class="mx-auto w-full max-w-[1650px] pt-[130px]">
+			<section data-nav="scroll-spy" id="products" data-products="products" class="w-full bg-darkWhite px-3">
+				<div data-animation class="mx-auto w-full max-w-[1650px] pt-[130px]">
 					<div class="flex justify-center">
 						<label for="selectPerSize" class="border-[1px] border-red bg-white px-3 py-2"
 							>Liczba produktów na stronie</label
@@ -401,6 +403,8 @@
 				</div>
 			</div>
 		</div>
-		<script type="module" src="/src/script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+		<script type="module" src="./src/script.js"></script>
 	</body>
 </html>
