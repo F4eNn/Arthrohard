@@ -22,7 +22,7 @@ module.exports = {
 				vsm: '425px',
 			},
 			backgroundImage: {
-				parallax: "url('/assets/minify-images/section-dog.webp')",
+				parallax: "url('/assets/minify-images/section-dog.webp'), url('/assets/minify-images/dog-right-vector.webp'), url('assets/minify-images/dog-vector.webp')",
 			},
 		},
 	},

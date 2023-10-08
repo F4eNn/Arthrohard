@@ -79,5 +79,15 @@
 	.burget-btn {
 		@apply hover-colors-300 h-[2px] w-[25px] bg-black group-hover:bg-red;
 	}
-}
 
+	.parallax {
+		background-image: url('/assets/minify-images/section-dog.webp'), url('/assets/minify-images/dog-vector.webp'),
+			url('/assets/minify-images/dog-right-vector.webp');
+		background-attachment: fixed, fixed, fixed;
+		background-repeat: no-repeat;
+		background-position:
+			center,
+			calc(50% - 200px) calc(50% + 100px),
+			calc(50% + 300px) calc(50% + 75px);
+	}
+}

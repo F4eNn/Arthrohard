@@ -786,6 +786,17 @@ video {
   background-color: rgb(171 48 60 / var(--tw-bg-opacity));
 }
 
+.parallax {
+  background-image: url('/assets/minify-images/section-dog.webp'), url('/assets/minify-images/dog-vector.webp'),
+			url('/assets/minify-images/dog-right-vector.webp');
+  background-attachment: fixed, fixed, fixed;
+  background-repeat: no-repeat;
+  background-position:
+			center,
+			calc(50% - 200px) calc(50% + 100px),
+			calc(50% + 300px) calc(50% + 75px);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -987,10 +998,6 @@ video {
 
 .isolation-auto {
   isolation: auto;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .z-0 {
@@ -1282,10 +1289,6 @@ video {
   max-height: 1238px;
 }
 
-.min-h-\[500px\] {
-  min-height: 500px;
-}
-
 .w-3\/4 {
   width: 75%;
 }
@@ -1312,10 +1315,6 @@ video {
 
 .w-\[70px\] {
   width: 70px;
-}
-
-.w-\[945px\] {
-  width: 945px;
 }
 
 .w-full {
@@ -1411,26 +1410,6 @@ video {
 
 .translate-x-2 {
   --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[10px\] {
-  --tw-translate-y: 10px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[9px\] {
-  --tw-translate-y: 9px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[5px\] {
-  --tw-translate-y: 5px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-\[5px\] {
-  --tw-translate-y: -5px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2535,20 +2514,8 @@ video {
   background-color: #ffff;
 }
 
-.bg-\[url\(\'\/assets\/minify-images\/dog-right-vector\.webp\'\)\] {
-  background-image: url('/assets/minify-images/dog-right-vector.webp');
-}
-
-.bg-\[url\(\'\/assets\/minify-images\/dog-vector\.webp\'\)\] {
-  background-image: url('/assets/minify-images/dog-vector.webp');
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-parallax {
-  background-image: url('/assets/minify-images/section-dog.webp');
 }
 
 .from-black {
@@ -2608,10 +2575,6 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-repeat {
@@ -3664,10 +3627,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-\[122px\] {
-    margin-top: 122px;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -3722,12 +3681,12 @@ video {
     margin-left: -5rem;
   }
 
-  .xl\:mt-\[135px\] {
-    margin-top: 135px;
-  }
-
   .xl\:mt-\[122px\] {
     margin-top: 122px;
+  }
+
+  .xl\:mt-\[135px\] {
+    margin-top: 135px;
   }
 
   .xl\:inline {
@@ -3800,4 +3759,3 @@ video {
     line-height: 60px;
   }
 }
-
