@@ -259,7 +259,7 @@
 					</h2>
 					<h3 class="mt-[90px] text-center text-xl sm:mt-[120px] sm:text-heading3">Co dają poszczególne składniki:</h3>
 					<div class="mt-[90px] flex flex-col items-center justify-between sm:mt-[121px] 2xl:flex-row">
-						<div class="flex flex-wrap justify-around gap-14 2xl:flex-col 2xl:gap-4">
+						<div class="flex flex-wrap justify-around 2xl:justify-normal gap-14 2xl:flex-col  2xl:gap-4 ">
 							<div class="flex max-w-[417px] flex-col items-center gap-5 vsm:text-normal">
 								<div class="h-[70px] w-[70px] rounded-full bg-smoke"></div>
 								<h3 class="medicine-underline group relative flex flex-col items-center gap-5 text-xl md:text-heading3">
@@ -298,7 +298,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="relative max-h-[1238px] shrink-0">
+						<div class="relative 2xl:h-[1238px] shrink-0">
 							<div>
 								<img src="./assets/minify-images/medicine.webp" alt="lek Arthrohard" class="relative z-20" />
 								<img src="./assets/minify-images/medicine-right-vector.webp" alt="" class="absolute left-0 top-[38%]" />
@@ -361,14 +361,14 @@
 
 			<section data-nav="scroll-spy" id="products" data-products="products" class="w-full bg-darkWhite px-3">
 				<div data-animation class="mx-auto w-full max-w-[1650px] translate-y-[100px] pt-[130px]">
-					<div class="flex justify-center">
+					<div class="flex justify-center vsm:flex-row flex-col ">
 						<label for="selectPerSize" class="border-[1px] border-red bg-white px-3 py-2"
 							>Liczba produktów na stronie</label
 						>
 						<div class="custom-select relative flex">
 							<select
 								id="selectPerSize"
-								class="select relative w-[100px] cursor-pointer border-none bg-red pl-[35px] text-white"
+								class="select relative w-full vsm:w-[100px] py-2  cursor-pointer border-none bg-red pl-[35px] text-white"
 							>
 								<option value="10">10</option>
 								<option selected value="20">20</option>

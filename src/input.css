@@ -98,4 +98,9 @@
 			calc(50% - 200px) calc(50% + 100px),
 			calc(50% + 300px) calc(50% + 75px);
 	}
+	@media (max-width: 640px) {
+		.parallax {
+			background-attachment: scroll, scroll, scroll;
+		}
+	}
 }
