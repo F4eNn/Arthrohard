@@ -74,10 +74,13 @@
 }
 @layer components {
 	.nav-link {
-		@apply hover-colors-300 relative cursor-pointer px-2 py-5 hover:text-red;
+		@apply hover-colors-300 relative cursor-pointer  hover:text-red;
 	}
 	.burget-btn {
 		@apply hover-colors-300 h-[2px] w-[25px] bg-black group-hover:bg-red;
+	}
+	.nav-item {
+		@apply px-2 py-5 relative
 	}
 
 	.parallax {
