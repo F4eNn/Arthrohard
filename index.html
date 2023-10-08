@@ -15,10 +15,10 @@
 						><img src="/assets/minify-images/logo.webp" alt="logo Arthrohard" class="w-[180px] shrink-0 md:w-[240px]"
 					/></a>
 				</li>
-				<ul class="hidden w-7/12 gap-[40px] md:flex">
-					<li class="nav-link"><a href="#about-us" class="nav-item">Co nas wyróżnia</a></li>
-					<li class="nav-link"><a href="#composition" class="nav-item">skład</a></li>
-					<li class="nav-link font-bold"><a href="#products" class="nav-item">Produkty</a></li>
+				<ul data-nav="desktop" class="hidden w-7/12 gap-[40px] md:flex">
+					<li class="nav-link translate-y-6 opacity-0"><a href="#about-us" class="nav-item">Co nas wyróżnia</a></li>
+					<li class="nav-link translate-y-6 opacity-0"><a href="#composition" class="nav-item">skład</a></li>
+					<li class="nav-link translate-y-6 font-bold opacity-0"><a href="#products" class="nav-item">Produkty</a></li>
 				</ul>
 				<li class="relative z-20 md:hidden">
 					<button data-hamburger="mobile-menu" class="group space-y-[5px] py-3">
@@ -27,7 +27,7 @@
 						<div data-bars="bar" class="burget-btn"></div>
 					</button>
 				</li>
-				<li data-nav="mobile" class="fixed inset-0 left-full bg-black/10">
+				<li data-nav="mobile" class="transtion-all fixed inset-0 left-full bg-black/10 duration-300">
 					<ul class="ml-auto h-screen w-3/4 space-y-8 bg-gray pl-10 pt-36">
 						<li class="nav-link"><a href="#about-us" class="nav-item">Co nas wyróżnia</a></li>
 						<li class="nav-link"><a href="#composition" class="nav-item">skład</a></li>
@@ -39,7 +39,7 @@
 
 		<main class="mt-[85px] xl:mt-[122px]">
 			<section data-nav="scroll-spy" class="relative z-20 w-full bg-darkWhite pb-20 pt-8">
-				<div data-animation>
+				<div data-animation class="translate-y-[100px]">
 					<img
 						src="/assets/minify-images/global-vector.webp"
 						alt=""
@@ -98,7 +98,7 @@
 			</section>
 
 			<section data-nav="scroll-spy" id="about-us" class="overflow-hidden bg-darkWhite pb-[100px] pt-[70px]">
-				<div data-animation class="wrapper relative z-30 px-3">
+				<div data-animation class="wrapper relative z-30 translate-y-[100px] px-3">
 					<div class="flex flex-col items-center">
 						<h2 class="mb-5 text-center text-3xl sm:text-4xl 2xl:text-heading2 2xl:leading-[60px]">
 							<span class="gradient bg-clip-text text-transparent">Co wyróżnia nasz preparat</span>
@@ -251,7 +251,7 @@
 			</section>
 
 			<section data-nav="scroll-spy" id="composition" class="mx-3 overflow-hidden">
-				<div data-animation class="wrapper mb-[108px]">
+				<div data-animation class="wrapper mb-[108px] translate-y-[100px]">
 					<h2 class="mt-12 text-center text-3xl sm:text-4xl 2xl:text-heading2">
 						<span class="gradient">Skład w 5ml</span>
 					</h2>
@@ -358,7 +358,7 @@
 			</section>
 
 			<section data-nav="scroll-spy" id="products" data-products="products" class="w-full bg-darkWhite px-3">
-				<div data-animation class="mx-auto w-full max-w-[1650px] pt-[130px]">
+				<div data-animation class="mx-auto w-full max-w-[1650px] translate-y-[100px] pt-[130px]">
 					<div class="flex justify-center">
 						<label for="selectPerSize" class="border-[1px] border-red bg-white px-3 py-2"
 							>Liczba produktów na stronie</label

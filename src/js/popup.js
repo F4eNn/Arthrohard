@@ -1,9 +1,11 @@
 import { allAvailableProducts } from './products.js'
+import { animatePopup } from './animations.js'
 const popup = document.querySelector('[data-overlay]')
 const closeBtn = document.querySelector('#closeBtn')
 const fields = document.querySelectorAll('[data-content*="popup"]')
 
 let currentItem = null
+let isOpen = false
 
 const getRelevantProduct = e => {
 	if (e.target.hasAttribute('data-product')) {
@@ -27,7 +29,18 @@ const setPopup = () => {
 	fields[2].textContent = currentItem.value
 }
 
-const togglePopup = () => popup.classList.toggle('hide')
+const togglePopup = () => {
+	isOpen = !isOpen
+	animatePopup(isOpen)
+
+	if (isOpen) {
+		popup.classList.toggle('hide')
+	} else {
+		setTimeout(() => {
+			popup.classList.toggle('hide')
+		}, 250)
+	}
+}
 
 const closeOnOverlay = e => {
 	if (e.target.hasAttribute('data-overlay')) {

@@ -1,3 +1,5 @@
+import { mobileNavAnimation } from "./animations.js"
+
 const hamburgerBtn = document.querySelector('[data-hamburger="mobile-menu"]')
 const mobileNav = document.querySelector('[data-nav="mobile"]')
 const navItems = document.querySelectorAll('[data-nav="mobile"] ul li a')
@@ -17,7 +19,7 @@ const toggleNav = () => {
 	isOpen = !isOpen
 	mobileNav.style.left = isOpen ? '0' : '100%'
 	document.body.style.overflowY = isOpen ? 'hidden' : 'scroll'
-
+	mobileNavAnimation(isOpen)
 	bars.forEach((bar, index) => {
 		bar.style.backgroundColor = isOpen ? openColor : closeColor
 		crossBars[index].forEach(className => bar.classList.toggle(className))
