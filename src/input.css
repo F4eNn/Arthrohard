@@ -71,6 +71,11 @@
 	.hide {
 		display: none;
 	}
+	.select {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
 }
 @layer components {
 	.nav-link {
@@ -80,7 +85,7 @@
 		@apply hover-colors-300 h-[2px] w-[25px] bg-black group-hover:bg-red;
 	}
 	.nav-item {
-		@apply px-2 py-5 relative
+		@apply relative px-2 py-5;
 	}
 
 	.parallax {

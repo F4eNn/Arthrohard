@@ -363,15 +363,22 @@
 						<label for="selectPerSize" class="border-[1px] border-red bg-white px-3 py-2"
 							>Liczba produktów na stronie</label
 						>
-						<select
-							id="selectPerSize"
-							class="relative flex cursor-pointer justify-center border-none bg-red px-7 text-white"
-						>
-							<option value="10">10</option>
-							<option selected value="20">20</option>
-							<option value="30">30</option>
-							<option value="50">50</option>
-						</select>
+						<div class="custom-select relative flex">
+							<select
+								id="selectPerSize"
+								class="select relative w-[100px] cursor-pointer border-none bg-red pl-[35px] text-white"
+							>
+								<option value="10">10</option>
+								<option selected value="20">20</option>
+								<option value="30">30</option>
+								<option value="50">50</option>
+							</select>
+							<img
+								src="./assets/minify-images/select-arrow.svg"
+								alt=""
+								class="absolute right-7 top-1/2 w-3 -translate-y-1/2"
+							/>
+						</div>
 					</div>
 					<div data-boxProducts="box" class="mt-[120px] flex flex-wrap justify-center gap-x-12 gap-y-9">
 						<template data-productsTemplate="products">
